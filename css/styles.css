@@ -296,6 +296,8 @@ img {
   justify-content: center;
 }
 /* team-section*/
+
+/* team-section*/
 .team-section {
   background: var(---color-team-section-bgd);
   padding-top: 94px;
@@ -390,7 +392,7 @@ h4 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.networks-list {
+.social-icons-list {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -401,6 +403,7 @@ h4 {
   background-color: #2196f3;
   fill: #ffffff;
 }
+
 /*----------------Clients------------------ */
 .client-title {
   font-weight: 700;
@@ -538,6 +541,11 @@ footer {
   justify-content: baseline;
   margin-left: 55px;
 }
+.networks-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 .networks-list__link {
   display: flex;
   width: 44px;
@@ -549,19 +557,6 @@ footer {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .social-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: #ffff;
-  display: flex;
-  fill: #afb1b8;
-  align-items: center;
-  justify-content: center;
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .networks-list__link:hover,
 .networks-list__link:focus {

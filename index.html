@@ -170,6 +170,7 @@
           </ul>
         </div>
       </section>
+
       <section class="team-section">
         <div class="container container-team">
           <h2 class="team-title">Наша команда</h2>
@@ -355,6 +356,7 @@
           </ul>
         </div>
       </section>
+
       <section class="clients-section">
         <div class="container">
           <h2 class="client-title">Постійні клієнти</h2>
@@ -405,17 +407,20 @@
         </div>
       </section>
     </main>
+    <!------------------------------- Footer Block ---------------------------->
     <footer>
       <div class="container-footer footer">
-        <div>
-          <a href="./index.html" class="logo-link-footer link" lang="en">
-            Web<span class="logo-footer">Studio</span></a
+        <!---------------- Logo Block in Footer------------------------------------------------------>
+        <div class="logo">
+          <a href="./index.html" class="logo__link-footer link" lang="en">
+            Web<span class="logo__accent">Studio</span></a
           >
+          <!------------------------------------ Contacts Block in Footer ----------->
           <address class="address">
-            <ul class="list">
-              <li class="contacts-item-footer-adress">
+            <ul class="contacts-footer list">
+              <li class="contacts-footer__adress">
                 <a
-                  class="contacts-link-footer link"
+                  class="contacts-footer__link link"
                   href="http://surl.li/ckzrz"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -423,67 +428,69 @@
                   м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="contacts-item-footer-mail">
+              <li class="contacts-footer__email">
                 <a
                   href="mailto:info@devstudio.com"
-                  class="contacts-mail-footer link"
+                  class="contacts-footer__mail link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="contacts-item-footer">
-                <a href="tel:+3809611111" class="contacts-tel-footer link"
+              <li class="contacts-footer__tel">
+                <a href="tel:+3809611111" class="contacts-footer__mobile link"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-social-links">
-          <p class="footer-text">Приєднуйтесь</p>
-          <ul class="social-icons-list list">
-            <li class="social-item">
-              <a href="" class="social-link-footer"
-                ><svg class="social-icons" width="20" height="20">
+        <!------------------------------------ Social Networks Block in Footer ----------->
+        <div class="footer-networks">
+          <p class="footer-networks_title">Приєднуйтесь</p>
+          <!------------------------------------ Social Links Block in Footer----------->
+          <ul class="networks-list list">
+            <li class="networks-list__item">
+              <a href="" class="networks-list__link"
+                ><svg class="networks-list__icons" width="20" height="20">
                   <use
                     href="./images/symbol-defs.svg#icon-instagram"
                   ></use></svg
               ></a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link-footer">
-                <svg class="social-icons" width="20" height="20">
+            <li class="networks-list__item">
+              <a href="" class="networks-list__link">
+                <svg class="networks-list__icons" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
               ></a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link-footer">
-                <svg class="social-icons" width="20" height="20">
+            <li class="networks-list__item">
+              <a href="" class="networks-list__link">
+                <svg class="networks-list__icons" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="social-item">
-              <a href=" " class="social-link-footer"
-                ><svg class="social-icons" width="20" height="20">
+            <li class="networks-list__item">
+              <a href=" " class="networks-list__link"
+                ><svg class="networks-list__icons" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
               ></a>
             </li>
           </ul>
         </div>
-
+        <!---------------------------------- Subscription form Block in Footer ----------------------------------------->
         <form action="#">
-          <div class="footer-form-div">
-            <p class="sigh-up-title">Підпишіться на розсилку</p>
+          <div class="subscription">
+            <p class="subscription__title">Підпишіться на розсилку</p>
             <label for="email"></label>
             <input
               type="email"
               name="email"
               id="email"
               placeholder="E-mail"
-              class="email-form-footer"
+              class="subscription__input"
             />
-            <button type="submit" class="footer-submit-btn">
+            <button type="submit" class="subscription__btn">
               <span> Підписатися</span>
-              <svg class="footer-icon" width="24" height="24">
+              <svg class="subscription__icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
