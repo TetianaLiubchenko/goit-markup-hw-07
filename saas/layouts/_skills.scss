@@ -1,0 +1,31 @@
+.skills-icons-div {
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+
+  width: 270px;
+  height: 120px;
+}
+
+.skills {
+  background: var(---color-skills-bgd);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list-skills {
+  display: flex;
+  gap: 30px;
+}
+.skills-icons-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-item {
+  width: calc((100% - 30px * 3) / 4);
+  flex-wrap: wrap;
+}
+.flex-element:nth-child(4n) {
+  margin-right: 0;
+}

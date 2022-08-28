@@ -1,0 +1,21 @@
+@import "./utils/vars";
+@import "./base/reset";
+@import "./base/common.scss";
+@import "./utils/hidden";
+@import "./utils/margin-auto";
+@import "./utils/fonts";
+
+@import "./components/container";
+@import "./layouts/header";
+@import "./layouts/mainpage";
+@import "./layouts/skills";
+@import "./layouts/services";
+@import "./layouts/team";
+@import "./layouts/sociallinks";
+@import "./layouts/clients";
+@import "./components/logo";
+@import "./layouts/footer";
+@import "./layouts/modal";
+@import "./components/container-portfolio";
+@import "./components/filter";
+@import "./layouts/gallery";

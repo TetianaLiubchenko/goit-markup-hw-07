@@ -72,10 +72,8 @@ img {
 .logo__link {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include fonts(700, 26px, 1.19, 0.03em);
+
   color: var(--color-logo);
   padding-top: 24px;
   padding-bottom: 24px;
@@ -94,10 +92,8 @@ img {
 .nav-header__link {
   display: block;
   position: relative;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include fonts(500, 14px, 1.14, 0.02em);
+ 
   color: var(---text-color);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -123,10 +119,8 @@ img {
 .contacts-header__email,
 .contacts-header__tel {
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include fonts(500, 14px, 1.14, 0.02em);
+
   color: var(--color-contacts);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -163,8 +157,7 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/Imgbacground.jpg");
-  margin-right: auto;
-  margin-left: auto;
+  @extend %margin-auto;
   text-align: center;
   padding: 200px 0 200px 0;
 }
@@ -179,15 +172,12 @@ img {
 }
 
 .title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  @include fonts(900, 44px, 1.36, 0.06em);
+
   text-transform: uppercase;
   color: var(---color-title);
   max-width: 696px;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %margin-auto;
   text-align: center;
 }
 .button-main {
@@ -195,35 +185,25 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  @include fonts(700, 16px, 1.88, 0.06em);
   display: flex;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
   color: var(--color-btn-text);
   margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+ @extend %margin-auto;
   border: 0;
   padding: 10px 32px;
 }
 
 .main-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include fonts(700, 14px, 1.14, 0.03em);
+
   color: var(---text-color);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 .main-content {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include fonts(400, 14px, 1.71, 0.03em);
   color: var(---color-text-main);
   max-width: 270px;
 }
@@ -253,11 +233,8 @@ img {
 
 /* services*/
 .services {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include fonts(700, 36px, 1.17, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(---text-color);
   margin-bottom: 50px;
 }
@@ -281,12 +258,8 @@ img {
   position: absolute;
   bottom: 0;
   display: flex;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+@include fonts(700, 14px, 1.14, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
@@ -311,25 +284,18 @@ img {
 
 .container-team {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  @extend %margin-auto;
 
 .team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include fonts(700, 36px, 1.17, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(---text-color);
   margin-bottom: 50px;
 }
 .team {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include fonts(500, 16px, 1.19, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
+
   color: var(---text-color);
   background: #ffffff;
   margin-bottom: 10px;
@@ -345,11 +311,8 @@ img {
 }
 
 .team-item .list-team .team-list {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
+  @include fonts(400, 16px, 1.19, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(---color-text-main);
 }
 
@@ -406,11 +369,8 @@ h4 {
 
 /*----------------Clients------------------ */
 .client-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include fonts(700, 36px, 1.17, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
 }
@@ -473,10 +433,8 @@ footer {
 .logo__link-footer {
   display: inline-block;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include fonts(700, 26px, 1.19, 0.03em);
+
   color: var(--color-logo);
   margin-bottom: 20px;
 }
@@ -518,8 +476,7 @@ footer {
 }
 .container-footer {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %margin-auto;
   text-align: start;
   padding: 0 15px;
   display: flex;
@@ -529,10 +486,7 @@ footer {
 .footer-networks_title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  @include fonts(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
@@ -570,10 +524,7 @@ footer {
 }
 
 .subscription__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include fonts(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
   display: block;
@@ -584,10 +535,8 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  @include fonts(400, 16px, 1.25, 0.03em);
+
   color: rgba(255, 255, 255, 0.6);
   background: #2f303a;
   width: 358px;
@@ -606,10 +555,8 @@ footer {
 
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include fonts(700, 16px, 1.88, 0.06em);
+ 
   color: var(---color-portfolio-btn);
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -700,11 +647,8 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .modal-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include fonts(700, 20px, 1.15, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
   margin-bottom: 12px;
@@ -734,15 +678,12 @@ footer {
 .submit-btn {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  @include fonts(700, 16px, 1.88, 0.06em);
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+ @extend %margin-auto;
   width: 200px;
   height: 50px;
-  letter-spacing: 0.06em;
+
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -757,10 +698,7 @@ footer {
   background-color: #188ce8;
 }
 .input-title {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include fonts(400, 12px, 1.17, 0.01em);
   color: #757575;
 
   display: block;
@@ -777,10 +715,8 @@ footer {
   margin-bottom: 20px;
   resize: none;
   display: block;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include fonts(400, 12px, 1.17, 0.01em);
+
   color: rgba(117, 117, 117, 0.5);
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -806,10 +742,8 @@ footer {
 .check-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include fonts(400, 14px, 1.71, 0.03em);
+ 
   color: #757575;
   margin-left: 12px;
   display: flex;
@@ -882,8 +816,7 @@ footer {
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %margin-auto;
   justify-content: center;
 }
 
@@ -912,10 +845,8 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include fonts(400, 18px, 1.56, 0.03em);
+
   color: var(---color-text-overlay);
   top: 0;
   left: 0;
@@ -945,11 +876,9 @@ footer {
   padding: 6px 22px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
+  @include fonts(500, 16px, 1.63, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
+
   color: var(---color--portfolio-text-btn);
   border: 1px solid transparent;
   border-radius: 4px;
@@ -971,18 +900,13 @@ footer {
 }
 
 .description-cards__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include fonts(700, 18px, 21.14, 0.06em);
+
   color: var(---text-color);
   margin-bottom: 4px;
 }
 .descripchion-cards_content {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
+  @include fonts(400, 16px, 1.88, 0.03em);
   color: var(---color-text-main);
 }
 .actions__picture {

@@ -1,0 +1,10 @@
+@mixin fonts($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+font-family: "Roboto", sans-serif;
+
+font-family: "Raleway", sans-serif;

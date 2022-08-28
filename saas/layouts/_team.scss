@@ -1,0 +1,53 @@
+.team-section {
+  background: var(---color-team-section-bgd);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.list-team {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+.container-team {
+  width: 1200px;
+  @extend %margin-auto;
+}
+
+.team-title {
+  @include fonts(700, 36px, 1.17, 0.03em);
+  text-align: center;
+  color: var(---text-color);
+  margin-bottom: 50px;
+}
+.team {
+  @include fonts(500, 16px, 1.19, 0.03em);
+  text-align: center;
+  color: var(---text-color);
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+.team-list {
+  color: #757575;
+  margin-bottom: 16px;
+}
+
+.team-cart {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-item,
+.list-team,
+.team-list {
+  @include fonts(400, 16px, 1.19, 0.03em);
+  text-align: center;
+  color: var(---color-text-main);
+}
+
+.team-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 90px) / 4);
+}

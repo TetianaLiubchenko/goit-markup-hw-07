@@ -1,0 +1,48 @@
+.main-page {
+  max-width: 1600px;
+  background: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Imgbacground.jpg");
+  @extend %margin-auto;
+  text-align: center;
+  padding: 200px 0 200px 0;
+}
+.title {
+  @include fonts(900, 44px, 1.36, 0.06em);
+
+  text-transform: uppercase;
+  color: var(---color-title);
+  max-width: 696px;
+  @extend %margin-auto;
+  text-align: center;
+}
+.button-main {
+  background: var(--color-bgd-btn);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  @include fonts(700, 16px, 1.88, 0.06em);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--color-btn-text);
+  margin-top: 30px;
+  @extend %margin-auto;
+  border: 0;
+  padding: 10px 32px;
+}
+
+.main-title {
+  @include fonts(700, 14px, 1.14, 0.03em);
+  color: var(---text-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.main-content {
+  @include fonts(400, 14px, 1.71, 0.03em);
+  color: var(---color-text-main);
+  max-width: 270px;
+}
