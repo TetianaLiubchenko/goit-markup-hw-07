@@ -8,10 +8,6 @@
   gap: 30px;
   text-align: center;
 }
-.container-team {
-  width: 1200px;
-  @extend %margin-auto;
-}
 
 .team-title {
   @include fonts(700, 36px, 1.17, 0.03em);

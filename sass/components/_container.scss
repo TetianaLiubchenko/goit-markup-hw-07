@@ -1,0 +1,19 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /*вирівнює по центру*/
+  margin: 0 auto;
+}
+.container-team {
+  width: 1200px;
+  @extend %margin-auto;
+}
+.container-footer {
+  width: 1200px;
+  @extend %margin-auto;
+  text-align: start;
+  padding: 0 15px;
+  display: flex;
+  align-items: baseline;
+}
